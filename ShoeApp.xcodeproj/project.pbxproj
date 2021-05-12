@@ -55,6 +55,8 @@
 		D12601662646800D00ECD3B8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D12601442646800D00ECD3B8 /* README.md */; };
 		D1D41C4726468813006E4527 /* BannerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D41C4626468813006E4527 /* BannerModel.swift */; };
 		D1D41C4C26468B96006E4527 /* IGAppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D41C4B26468B96006E4527 /* IGAppUtility.swift */; };
+		F547F467264C0A91008393CF /* ProductsOfferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F547F466264C0A91008393CF /* ProductsOfferView.swift */; };
+		F5722DEC264C0BA100E48586 /* ProductOfferCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5722DEB264C0BA100E48586 /* ProductOfferCellView.swift */; };
 		F5B7B8AC264BD8C100394F87 /* SnapKit+UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B7B8AB264BD8C100394F87 /* SnapKit+UIView+Extension.swift */; };
 		F5B7B8B4264BD93000394F87 /* LoginBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B7B8B3264BD93000394F87 /* LoginBanner.swift */; };
 		F5B7B8B9264BDD0900394F87 /* ClousureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B7B8B8264BDD0900394F87 /* ClousureButton.swift */; };
@@ -62,6 +64,8 @@
 		F5B7B8D0264BEF2900394F87 /* CollectionBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B7B8CF264BEF2900394F87 /* CollectionBannerView.swift */; };
 		F5B7B8D9264BF03300394F87 /* StoriesBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B7B8D8264BF03300394F87 /* StoriesBanner.swift */; };
 		F5B7B8E4264BF0BE00394F87 /* CollectionBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B7B8E3264BF0BE00394F87 /* CollectionBanner.swift */; };
+		F5D264F6264C1132000D5EAA /* ProductOfferCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D264F5264C1132000D5EAA /* ProductOfferCell.swift */; };
+		F5D264FB264C25E5000D5EAA /* ProductsOffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D264FA264C25E5000D5EAA /* ProductsOffer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,6 +145,8 @@
 		D1D41C4626468813006E4527 /* BannerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerModel.swift; sourceTree = "<group>"; };
 		D1D41C4B26468B96006E4527 /* IGAppUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGAppUtility.swift; sourceTree = "<group>"; };
 		DFBC363B19520A214100B07A /* Pods-ShoeAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShoeAppTests.debug.xcconfig"; path = "Target Support Files/Pods-ShoeAppTests/Pods-ShoeAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F547F466264C0A91008393CF /* ProductsOfferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsOfferView.swift; sourceTree = "<group>"; };
+		F5722DEB264C0BA100E48586 /* ProductOfferCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductOfferCellView.swift; sourceTree = "<group>"; };
 		F5B7B8AB264BD8C100394F87 /* SnapKit+UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SnapKit+UIView+Extension.swift"; sourceTree = "<group>"; };
 		F5B7B8B3264BD93000394F87 /* LoginBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBanner.swift; sourceTree = "<group>"; };
 		F5B7B8B8264BDD0900394F87 /* ClousureButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClousureButton.swift; sourceTree = "<group>"; };
@@ -148,6 +154,8 @@
 		F5B7B8CF264BEF2900394F87 /* CollectionBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionBannerView.swift; sourceTree = "<group>"; };
 		F5B7B8D8264BF03300394F87 /* StoriesBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesBanner.swift; sourceTree = "<group>"; };
 		F5B7B8E3264BF0BE00394F87 /* CollectionBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionBanner.swift; sourceTree = "<group>"; };
+		F5D264F5264C1132000D5EAA /* ProductOfferCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductOfferCell.swift; sourceTree = "<group>"; };
+		F5D264FA264C25E5000D5EAA /* ProductsOffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsOffer.swift; sourceTree = "<group>"; };
 		F68CC0462AF12AED14C39002 /* Pods-ShoeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShoeApp.debug.xcconfig"; path = "Target Support Files/Pods-ShoeApp/Pods-ShoeApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -270,6 +278,7 @@
 		D126010A26467F7C00ECD3B8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F547F46B264C0A96008393CF /* ProductsOffer */,
 				F5B7B8D7264BF01300394F87 /* StoriesBanner */,
 				F5B7B8CE264BEEDD00394F87 /* CollectionBanner */,
 				F5B7B8A9264BD86800394F87 /* Login */,
@@ -445,6 +454,17 @@
 				D12601132646800D00ECD3B8 /* Source */,
 			);
 			path = InstaStories;
+			sourceTree = "<group>";
+		};
+		F547F46B264C0A96008393CF /* ProductsOffer */ = {
+			isa = PBXGroup;
+			children = (
+				F547F466264C0A91008393CF /* ProductsOfferView.swift */,
+				F5722DEB264C0BA100E48586 /* ProductOfferCellView.swift */,
+				F5D264F5264C1132000D5EAA /* ProductOfferCell.swift */,
+				F5D264FA264C25E5000D5EAA /* ProductsOffer.swift */,
+			);
+			path = ProductsOffer;
 			sourceTree = "<group>";
 		};
 		F5B7B8A9264BD86800394F87 /* Login */ = {
@@ -774,7 +794,9 @@
 				D12601582646800D00ECD3B8 /* IGURLSession.swift in Sources */,
 				D126015D2646800D00ECD3B8 /* IGConstants.swift in Sources */,
 				D12601472646800D00ECD3B8 /* IGStoryPreviewModel.swift in Sources */,
+				F5722DEC264C0BA100E48586 /* ProductOfferCellView.swift in Sources */,
 				D12601512646800D00ECD3B8 /* IGSnap.swift in Sources */,
+				F547F467264C0A91008393CF /* ProductsOfferView.swift in Sources */,
 				F5B7B8E4264BF0BE00394F87 /* CollectionBanner.swift in Sources */,
 				D126014B2646800D00ECD3B8 /* Color+Additions.swift in Sources */,
 				F5B7B8B9264BDD0900394F87 /* ClousureButton.swift in Sources */,
@@ -790,12 +812,14 @@
 				D12600D226467AA900ECD3B8 /* AppDelegate.swift in Sources */,
 				F5B7B8AC264BD8C100394F87 /* SnapKit+UIView+Extension.swift in Sources */,
 				D12601552646800D00ECD3B8 /* IGRoundedView.swift in Sources */,
+				F5D264F6264C1132000D5EAA /* ProductOfferCell.swift in Sources */,
 				D12601502646800D00ECD3B8 /* IGStories.swift in Sources */,
 				D12601622646800D00ECD3B8 /* CubeAttributesAnimator.swift in Sources */,
 				D126014A2646800D00ECD3B8 /* IGAdditions.swift in Sources */,
 				D12601592646800D00ECD3B8 /* IGCache.swift in Sources */,
 				F5B7B8D9264BF03300394F87 /* StoriesBanner.swift in Sources */,
 				D12601452646800D00ECD3B8 /* IGMockLoader.swift in Sources */,
+				F5D264FB264C25E5000D5EAA /* ProductsOffer.swift in Sources */,
 				D126015B2646800D00ECD3B8 /* IGPlayerView.swift in Sources */,
 				D126015E2646800D00ECD3B8 /* IGRetryButton.swift in Sources */,
 				D12601642646800D00ECD3B8 /* UIView+Anchor.swift in Sources */,

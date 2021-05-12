@@ -11,6 +11,8 @@ class ViewController: UIViewController {
     
     private let scrollView = UIScrollView()
     
+//    let productsOffer = ProductsOfferView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -43,7 +45,10 @@ class ViewController: UIViewController {
         
         let collectionBanner = CollectionBannerView(model: collectionModel)
         
-        contentContainer.buildVerticalStackOf([loginBanner, collectionBanner, banner],
+        let productsOfferModel = ProductsOffer(title: "Специально для вас", subtitle: "Персонализированная подборка")
+        let productsOffer = ProductsOfferView(model: productsOfferModel)
+        
+        contentContainer.buildVerticalStackOf([loginBanner, collectionBanner, productsOffer, banner],
                                               betweenOffset: 50,
                                               insets: .zero)
         

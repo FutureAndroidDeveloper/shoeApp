@@ -66,6 +66,10 @@ class StoriesBannerView: UIView {
     private func configureUI() {
         titleLabel.textColor = .white
         titleLabel.textAlignment = .center
+        titleLabel.numberOfLines = 0
+        titleLabel.font = UIFont.boldSystemFont(ofSize: 35)
+        
+        detailsButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
     }
     
     private var viewModel: IGHomeViewModel = IGHomeViewModel()
