@@ -48,7 +48,10 @@ class ViewController: UIViewController {
         let productsOfferModel = ProductsOffer(title: "Специально для вас", subtitle: "Персонализированная подборка")
         let productsOffer = ProductsOfferView(model: productsOfferModel)
         
-        contentContainer.buildVerticalStackOf([loginBanner, collectionBanner, productsOffer, banner],
+        
+        let pager = ActualPagerView()
+        
+        contentContainer.buildVerticalStackOf([loginBanner, collectionBanner, productsOffer, banner, pager],
                                               betweenOffset: 50,
                                               insets: .zero)
         

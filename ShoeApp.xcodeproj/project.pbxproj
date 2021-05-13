@@ -66,6 +66,8 @@
 		F5B7B8E4264BF0BE00394F87 /* CollectionBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B7B8E3264BF0BE00394F87 /* CollectionBanner.swift */; };
 		F5D264F6264C1132000D5EAA /* ProductOfferCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D264F5264C1132000D5EAA /* ProductOfferCell.swift */; };
 		F5D264FB264C25E5000D5EAA /* ProductsOffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D264FA264C25E5000D5EAA /* ProductsOffer.swift */; };
+		F5E92F79264C3BB9006F9FBD /* ActualPagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E92F78264C3BB9006F9FBD /* ActualPagerView.swift */; };
+		F5E92F7E264C3C2E006F9FBD /* ActualPagerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E92F7D264C3C2E006F9FBD /* ActualPagerModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -156,6 +158,8 @@
 		F5B7B8E3264BF0BE00394F87 /* CollectionBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionBanner.swift; sourceTree = "<group>"; };
 		F5D264F5264C1132000D5EAA /* ProductOfferCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductOfferCell.swift; sourceTree = "<group>"; };
 		F5D264FA264C25E5000D5EAA /* ProductsOffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsOffer.swift; sourceTree = "<group>"; };
+		F5E92F78264C3BB9006F9FBD /* ActualPagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActualPagerView.swift; sourceTree = "<group>"; };
+		F5E92F7D264C3C2E006F9FBD /* ActualPagerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActualPagerModel.swift; sourceTree = "<group>"; };
 		F68CC0462AF12AED14C39002 /* Pods-ShoeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShoeApp.debug.xcconfig"; path = "Target Support Files/Pods-ShoeApp/Pods-ShoeApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -278,6 +282,7 @@
 		D126010A26467F7C00ECD3B8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F5E92F77264C3B75006F9FBD /* Pager */,
 				F547F46B264C0A96008393CF /* ProductsOffer */,
 				F5B7B8D7264BF01300394F87 /* StoriesBanner */,
 				F5B7B8CE264BEEDD00394F87 /* CollectionBanner */,
@@ -534,6 +539,15 @@
 				F5B7B8D8264BF03300394F87 /* StoriesBanner.swift */,
 			);
 			path = StoriesBanner;
+			sourceTree = "<group>";
+		};
+		F5E92F77264C3B75006F9FBD /* Pager */ = {
+			isa = PBXGroup;
+			children = (
+				F5E92F78264C3BB9006F9FBD /* ActualPagerView.swift */,
+				F5E92F7D264C3C2E006F9FBD /* ActualPagerModel.swift */,
+			);
+			path = Pager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -798,6 +812,7 @@
 				D12601512646800D00ECD3B8 /* IGSnap.swift in Sources */,
 				F547F467264C0A91008393CF /* ProductsOfferView.swift in Sources */,
 				F5B7B8E4264BF0BE00394F87 /* CollectionBanner.swift in Sources */,
+				F5E92F79264C3BB9006F9FBD /* ActualPagerView.swift in Sources */,
 				D126014B2646800D00ECD3B8 /* Color+Additions.swift in Sources */,
 				F5B7B8B9264BDD0900394F87 /* ClousureButton.swift in Sources */,
 				D12601652646800D00ECD3B8 /* LayoutAttributesAnimator.swift in Sources */,
@@ -806,6 +821,7 @@
 				D12601602646800D00ECD3B8 /* Reachability.swift in Sources */,
 				D12601632646800D00ECD3B8 /* AnimatedCollectionViewLayout.swift in Sources */,
 				D12601532646800D00ECD3B8 /* UIImageView+Extension.swift in Sources */,
+				F5E92F7E264C3C2E006F9FBD /* ActualPagerModel.swift in Sources */,
 				F5B7B8BE264BDD2100394F87 /* ButtonsFactory.swift in Sources */,
 				D126015F2646800D00ECD3B8 /* IGStoryPreviewView.swift in Sources */,
 				D103F59F264AEE43002FDF09 /* IGHomeViewModel.swift in Sources */,
