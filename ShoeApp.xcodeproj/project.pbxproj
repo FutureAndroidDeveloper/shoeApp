@@ -57,6 +57,9 @@
 		D1D41C4C26468B96006E4527 /* IGAppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D41C4B26468B96006E4527 /* IGAppUtility.swift */; };
 		F547F467264C0A91008393CF /* ProductsOfferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F547F466264C0A91008393CF /* ProductsOfferView.swift */; };
 		F5722DEC264C0BA100E48586 /* ProductOfferCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5722DEB264C0BA100E48586 /* ProductOfferCellView.swift */; };
+		F57930BD264D7EDC00647C3F /* MainHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57930BC264D7EDC00647C3F /* MainHeaderView.swift */; };
+		F57930C5264D804400647C3F /* MainFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57930C4264D804400647C3F /* MainFooterView.swift */; };
+		F57930D1264D80DC00647C3F /* MainFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57930D0264D80DC00647C3F /* MainFooter.swift */; };
 		F5B7B8AC264BD8C100394F87 /* SnapKit+UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B7B8AB264BD8C100394F87 /* SnapKit+UIView+Extension.swift */; };
 		F5B7B8B4264BD93000394F87 /* LoginBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B7B8B3264BD93000394F87 /* LoginBanner.swift */; };
 		F5B7B8B9264BDD0900394F87 /* ClousureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B7B8B8264BDD0900394F87 /* ClousureButton.swift */; };
@@ -149,6 +152,9 @@
 		DFBC363B19520A214100B07A /* Pods-ShoeAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShoeAppTests.debug.xcconfig"; path = "Target Support Files/Pods-ShoeAppTests/Pods-ShoeAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F547F466264C0A91008393CF /* ProductsOfferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsOfferView.swift; sourceTree = "<group>"; };
 		F5722DEB264C0BA100E48586 /* ProductOfferCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductOfferCellView.swift; sourceTree = "<group>"; };
+		F57930BC264D7EDC00647C3F /* MainHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHeaderView.swift; sourceTree = "<group>"; };
+		F57930C4264D804400647C3F /* MainFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFooterView.swift; sourceTree = "<group>"; };
+		F57930D0264D80DC00647C3F /* MainFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFooter.swift; sourceTree = "<group>"; };
 		F5B7B8AB264BD8C100394F87 /* SnapKit+UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SnapKit+UIView+Extension.swift"; sourceTree = "<group>"; };
 		F5B7B8B3264BD93000394F87 /* LoginBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBanner.swift; sourceTree = "<group>"; };
 		F5B7B8B8264BDD0900394F87 /* ClousureButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClousureButton.swift; sourceTree = "<group>"; };
@@ -472,6 +478,24 @@
 			path = ProductsOffer;
 			sourceTree = "<group>";
 		};
+		F57930BB264D7ECA00647C3F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F57930BC264D7EDC00647C3F /* MainHeaderView.swift */,
+				F57930C9264D80AC00647C3F /* Footer */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F57930C9264D80AC00647C3F /* Footer */ = {
+			isa = PBXGroup;
+			children = (
+				F57930C4264D804400647C3F /* MainFooterView.swift */,
+				F57930D0264D80DC00647C3F /* MainFooter.swift */,
+			);
+			path = Footer;
+			sourceTree = "<group>";
+		};
 		F5B7B8A9264BD86800394F87 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -503,6 +527,7 @@
 		F5B7B8CB264BEE7D00394F87 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				F57930BB264D7ECA00647C3F /* View */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -795,7 +820,10 @@
 				D12601482646800D00ECD3B8 /* IGStoryPreviewController.swift in Sources */,
 				D1D41C4726468813006E4527 /* BannerModel.swift in Sources */,
 				D126015A2646800D00ECD3B8 /* IGVideoCacheManager.swift in Sources */,
+				F57930D1264D80DC00647C3F /* MainFooter.swift in Sources */,
+				F57930BD264D7EDC00647C3F /* MainHeaderView.swift in Sources */,
 				D12601492646800D00ECD3B8 /* UIView+Extension.swift in Sources */,
+				F57930C5264D804400647C3F /* MainFooterView.swift in Sources */,
 				D12601522646800D00ECD3B8 /* IGUser.swift in Sources */,
 				D126014C2646800D00ECD3B8 /* ImageView+Additions.swift in Sources */,
 				D12601562646800D00ECD3B8 /* IGImageRequestable.swift in Sources */,

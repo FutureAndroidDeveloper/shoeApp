@@ -24,6 +24,7 @@ class ViewController: UIViewController {
 
     private func build() {
         view.backgroundColor = .white
+        scrollView.delaysContentTouches = false
         
         view.addSubview(scrollView)
         scrollView.snp.makeConstraints {
@@ -51,7 +52,13 @@ class ViewController: UIViewController {
         
         let pager = ActualPagerView()
         
-        contentContainer.buildVerticalStackOf([loginBanner, collectionBanner, productsOffer, banner, pager],
+        let header = MainHeaderView()
+        
+        let footerModel = MainFooter(image: UIImage(named: "testImage")!, buttonTitle: "Для нее")
+        let footer = MainFooterView(model: footerModel)
+        footer.swapButtonTap = reloadContent
+        
+        contentContainer.buildVerticalStackOf([header, loginBanner, collectionBanner, productsOffer, banner, pager, footer],
                                               betweenOffset: 50,
                                               insets: .zero)
         
@@ -67,6 +74,10 @@ class ViewController: UIViewController {
         let storiesViewController = IGStoryPreviewController(stories: stories, handPickedStoryIndex: 0)
         
         present(storiesViewController, animated: true, completion: nil)
+    }
+    
+    private func reloadContent() {
+        print("Reload content now!")
     }
     
 }
