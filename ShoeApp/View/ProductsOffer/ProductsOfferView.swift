@@ -15,6 +15,8 @@ class ProductsOfferView: UIView {
     
     private let model: ProductsOffer
     
+    var productSelected: (() -> Void)?
+    
     init(model: ProductsOffer) {
         self.model = model
         collectionView = UICollectionView(centeredCollectionViewFlowLayout: centeredCollectionViewFlowLayout)
@@ -129,7 +131,10 @@ class ProductsOfferView: UIView {
 
 
 extension ProductsOfferView: UICollectionViewDelegate {
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print(indexPath)
+        productSelected?()
+    }
 }
 
 

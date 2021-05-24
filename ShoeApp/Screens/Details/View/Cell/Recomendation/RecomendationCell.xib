@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecomendationCell" rowHeight="520" id="KGk-i7-Jjw" customClass="RecomendationCell" customModule="HeaderExpandableCell" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="394" height="520"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="394" height="520"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Tzc-53-McR">
+                        <rect key="frame" x="20" y="99" width="354" height="152"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ozx-Wv-KNU" customClass="RecomendationView" customModule="HeaderExpandableCell" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="152" height="152"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="81t-An-7pY" customClass="RecomendationView" customModule="HeaderExpandableCell" customModuleProvider="target">
+                                <rect key="frame" x="202" y="0.0" width="152" height="152"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="FZc-Kc-FZR">
+                        <rect key="frame" x="20" y="259" width="354" height="172"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FSz-7U-PZg" customClass="RecomendationView" customModule="HeaderExpandableCell" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="172" height="172"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fLc-4c-dEu" customClass="RecomendationView" customModule="HeaderExpandableCell" customModuleProvider="target">
+                                <rect key="frame" x="182" y="0.0" width="172" height="172"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                    </stackView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l7q-tX-hes">
+                        <rect key="frame" x="70" y="481" width="254" height="28"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                        <state key="normal" title="Показать все"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Рекомендовано для вас" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wge-wz-Hrv">
+                        <rect key="frame" x="105.5" y="31" width="183" height="18"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="FZc-Kc-FZR" firstAttribute="top" secondItem="Tzc-53-McR" secondAttribute="bottom" constant="8" symbolic="YES" id="1aP-Kk-eiM"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Tzc-53-McR" secondAttribute="trailing" id="2W4-Kf-COw"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="l7q-tX-hes" secondAttribute="bottom" id="6rX-S2-rzj"/>
+                    <constraint firstItem="l7q-tX-hes" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="50" id="9un-1K-NKM"/>
+                    <constraint firstItem="Tzc-53-McR" firstAttribute="height" secondItem="FZc-Kc-FZR" secondAttribute="height" multiplier="0.883721" id="D0t-ap-21A"/>
+                    <constraint firstItem="Tzc-53-McR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Hol-gD-B6U"/>
+                    <constraint firstItem="l7q-tX-hes" firstAttribute="top" secondItem="FZc-Kc-FZR" secondAttribute="bottom" constant="50" id="LTv-wx-ZbD"/>
+                    <constraint firstItem="FZc-Kc-FZR" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="OXM-GI-beu"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="l7q-tX-hes" secondAttribute="trailing" constant="50" id="P7F-Wu-8qW"/>
+                    <constraint firstItem="FZc-Kc-FZR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="PxR-hE-bWg"/>
+                    <constraint firstItem="l7q-tX-hes" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Vzw-gY-zwK"/>
+                    <constraint firstItem="wge-wz-Hrv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="20" id="x7c-Ff-AXR"/>
+                    <constraint firstItem="wge-wz-Hrv" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="xpX-nL-ggy"/>
+                    <constraint firstItem="Tzc-53-McR" firstAttribute="top" secondItem="wge-wz-Hrv" secondAttribute="bottom" constant="50" id="zBB-2m-mSj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="firstLineStack" destination="Tzc-53-McR" id="q5P-sh-jFG"/>
+                <outlet property="secondLineStack" destination="FZc-Kc-FZR" id="U4Z-uF-SBh"/>
+                <outlet property="showAllButton" destination="l7q-tX-hes" id="zG9-5p-g0c"/>
+            </connections>
+            <point key="canvasLocation" x="-114.49275362318842" y="170.75892857142856"/>
+        </tableViewCell>
+    </objects>
+</document>

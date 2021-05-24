@@ -49,6 +49,11 @@ class ViewController: UIViewController {
         let productsOfferModel = ProductsOffer(title: "Специально для вас", subtitle: "Персонализированная подборка")
         let productsOffer = ProductsOfferView(model: productsOfferModel)
         
+        productsOffer.productSelected = { [weak self] in
+            let detailsViewController = ProductDetailsViewController()
+            self?.navigationController?.pushViewController(detailsViewController, animated: true)
+        }
+        
         
         let pager = ActualPagerView()
         

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DesignerCell" rowHeight="350" id="KGk-i7-Jjw" customClass="DesignerCell" customModule="HeaderExpandableCell" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="350"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="343" height="350"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CP9-XN-bYg">
+                        <rect key="frame" x="20" y="0.0" width="303" height="100.5"/>
+                        <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
+                        <string key="text">Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol Lol </string>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bub-Tu-UkT">
+                        <rect key="frame" x="20" y="279" width="303" height="40"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Коллекция бренда" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GKU-ny-qZI">
+                                <rect key="frame" x="84.5" y="11.5" width="134" height="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right" translatesAutoresizingMaskIntoConstraints="NO" id="4eo-9z-CfO">
+                                <rect key="frame" x="279" y="12" width="16" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="4eo-9z-CfO" secondAttribute="height" multiplier="1:1" id="Bd7-Ql-7e0"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GKU-ny-qZI" firstAttribute="centerX" secondItem="Bub-Tu-UkT" secondAttribute="centerX" id="0mr-4g-ClF"/>
+                            <constraint firstAttribute="height" constant="40" id="11r-87-KJL"/>
+                            <constraint firstItem="GKU-ny-qZI" firstAttribute="centerY" secondItem="Bub-Tu-UkT" secondAttribute="centerY" id="BWI-fJ-8a3"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="4eo-9z-CfO" secondAttribute="bottom" constant="4" id="Ems-LZ-uRP"/>
+                            <constraint firstItem="4eo-9z-CfO" firstAttribute="trailing" secondItem="Bub-Tu-UkT" secondAttribute="trailingMargin" id="aCp-y0-A3R"/>
+                            <constraint firstItem="4eo-9z-CfO" firstAttribute="centerY" secondItem="GKU-ny-qZI" secondAttribute="centerY" id="nnB-5s-Iok"/>
+                            <constraint firstItem="4eo-9z-CfO" firstAttribute="top" secondItem="Bub-Tu-UkT" secondAttribute="topMargin" constant="4" id="u8b-x0-a3B"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qt8-98-Gth" userLabel="Separator">
+                        <rect key="frame" x="20" y="349" width="303" height="1"/>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="8SB-px-oHb"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Bub-Tu-UkT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="3gL-tX-fzc"/>
+                    <constraint firstItem="CP9-XN-bYg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="4Ns-Rz-Umo"/>
+                    <constraint firstItem="qt8-98-Gth" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="AAL-5S-90K"/>
+                    <constraint firstAttribute="bottom" secondItem="qt8-98-Gth" secondAttribute="bottom" id="ETG-Qk-bTF"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="qt8-98-Gth" secondAttribute="trailing" id="QAn-aL-1TJ"/>
+                    <constraint firstItem="qt8-98-Gth" firstAttribute="top" secondItem="Bub-Tu-UkT" secondAttribute="bottom" constant="30" id="SLE-qF-PhN"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Bub-Tu-UkT" secondAttribute="trailing" id="TUw-ef-gZC"/>
+                    <constraint firstItem="CP9-XN-bYg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="nnU-6l-RO5"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="CP9-XN-bYg" secondAttribute="trailing" id="rPu-x6-Itn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="collectionView" destination="Bub-Tu-UkT" id="G8q-LS-4pM"/>
+                <outlet property="descriptionLabel" destination="CP9-XN-bYg" id="lcv-DS-4Wm"/>
+            </connections>
+            <point key="canvasLocation" x="148.55072463768118" y="189.50892857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="right" width="24" height="24"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
