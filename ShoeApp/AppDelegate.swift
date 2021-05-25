@@ -22,7 +22,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let vc = ViewController()
         
-        window?.rootViewController = UINavigationController(rootViewController: vc)
+        NavigationManager.shared.navigationController.viewControllers = [vc]
+        
+//        window?.rootViewController = UINavigationController(rootViewController: vc)
+        window?.rootViewController = NavigationManager.shared.navigationController
         window?.makeKeyAndVisible()
         
         return true
@@ -30,3 +33,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+class NavigationManager {
+    
+    static let shared = NavigationManager()
+    
+    let navigationController: UINavigationController
+    
+    private init() {
+        self.navigationController = UINavigationController()
+    }
+}

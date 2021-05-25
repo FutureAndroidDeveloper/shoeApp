@@ -27,6 +27,8 @@ class ProductSizeView: UIView {
     private let sizeTableLabel = IconedLabel()
     private let notificationLabel = IconedLabel()
     
+    var notificationTapped: (() -> Void)?
+    
     init() {
         super.init(frame: .zero)
         build()
@@ -72,7 +74,10 @@ class ProductSizeView: UIView {
         }
         
         notificationLabel.setModel(.init(title: "Нет нужного размера?", icon: UIImage(named: "notification")!, aligment: .right))
-        notificationLabel.iconDidTapped = {
+        notificationLabel.iconDidTapped = { [weak self] in
+//            self?.notificationTapped?()
+            let notificationViewController = ProductNotificationViewController(nibName: "ProductNotificationViewController", bundle: nil)
+            NavigationManager.shared.navigationController.pushViewController(notificationViewController, animated: true)
             print("notification tapped")
         }
     }

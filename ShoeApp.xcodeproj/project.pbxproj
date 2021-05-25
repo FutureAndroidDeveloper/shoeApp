@@ -55,6 +55,7 @@
 		D12601662646800D00ECD3B8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D12601442646800D00ECD3B8 /* README.md */; };
 		D1D41C4726468813006E4527 /* BannerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D41C4626468813006E4527 /* BannerModel.swift */; };
 		D1D41C4C26468B96006E4527 /* IGAppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D41C4B26468B96006E4527 /* IGAppUtility.swift */; };
+		F53CC427265D17700074F2EB /* BottomPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53CC426265D17700074F2EB /* BottomPickerViewController.swift */; };
 		F547F467264C0A91008393CF /* ProductsOfferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F547F466264C0A91008393CF /* ProductsOfferView.swift */; };
 		F55A8468265BE70A00728328 /* RecomendationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F55A8464265BE70A00728328 /* RecomendationCell.xib */; };
 		F55A8469265BE70A00728328 /* RecomendationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55A8465265BE70A00728328 /* RecomendationView.swift */; };
@@ -92,6 +93,11 @@
 		F5D264FB264C25E5000D5EAA /* ProductsOffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D264FA264C25E5000D5EAA /* ProductsOffer.swift */; };
 		F5E92F79264C3BB9006F9FBD /* ActualPagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E92F78264C3BB9006F9FBD /* ActualPagerView.swift */; };
 		F5E92F7E264C3C2E006F9FBD /* ActualPagerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E92F7D264C3C2E006F9FBD /* ActualPagerModel.swift */; };
+		F5FD4CCF265C09610049195D /* ProductNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FD4CCD265C09610049195D /* ProductNotificationViewController.swift */; };
+		F5FD4CD0265C09610049195D /* ProductNotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5FD4CCE265C09610049195D /* ProductNotificationViewController.xib */; };
+		F5FD4CD5265C09C70049195D /* ProductNotificationSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FD4CD4265C09C70049195D /* ProductNotificationSizeView.swift */; };
+		F5FD4CDB265C165D0049195D /* SizePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FD4CDA265C165D0049195D /* SizePickerView.swift */; };
+		F5FD4CE3265C166A0049195D /* SizePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5FD4CE2265C166A0049195D /* SizePickerView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -171,6 +177,7 @@
 		D1D41C4626468813006E4527 /* BannerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerModel.swift; sourceTree = "<group>"; };
 		D1D41C4B26468B96006E4527 /* IGAppUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGAppUtility.swift; sourceTree = "<group>"; };
 		DFBC363B19520A214100B07A /* Pods-ShoeAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShoeAppTests.debug.xcconfig"; path = "Target Support Files/Pods-ShoeAppTests/Pods-ShoeAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F53CC426265D17700074F2EB /* BottomPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomPickerViewController.swift; sourceTree = "<group>"; };
 		F547F466264C0A91008393CF /* ProductsOfferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsOfferView.swift; sourceTree = "<group>"; };
 		F55A8464265BE70A00728328 /* RecomendationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecomendationCell.xib; sourceTree = "<group>"; };
 		F55A8465265BE70A00728328 /* RecomendationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecomendationView.swift; sourceTree = "<group>"; };
@@ -208,6 +215,11 @@
 		F5D264FA264C25E5000D5EAA /* ProductsOffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsOffer.swift; sourceTree = "<group>"; };
 		F5E92F78264C3BB9006F9FBD /* ActualPagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActualPagerView.swift; sourceTree = "<group>"; };
 		F5E92F7D264C3C2E006F9FBD /* ActualPagerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActualPagerModel.swift; sourceTree = "<group>"; };
+		F5FD4CCD265C09610049195D /* ProductNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductNotificationViewController.swift; sourceTree = "<group>"; };
+		F5FD4CCE265C09610049195D /* ProductNotificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductNotificationViewController.xib; sourceTree = "<group>"; };
+		F5FD4CD4265C09C70049195D /* ProductNotificationSizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductNotificationSizeView.swift; sourceTree = "<group>"; };
+		F5FD4CDA265C165D0049195D /* SizePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizePickerView.swift; sourceTree = "<group>"; };
+		F5FD4CE2265C166A0049195D /* SizePickerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SizePickerView.xib; sourceTree = "<group>"; };
 		F68CC0462AF12AED14C39002 /* Pods-ShoeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShoeApp.debug.xcconfig"; path = "Target Support Files/Pods-ShoeApp/Pods-ShoeApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -623,6 +635,7 @@
 		F57930D5264D867E00647C3F /* Details */ = {
 			isa = PBXGroup;
 			children = (
+				F5FD4CCC265C08300049195D /* ProductNotification */,
 				F55A844D265BE64B00728328 /* View */,
 				F5C53F83265BE27A00F9DA25 /* ProductDetailsViewController.swift */,
 				F55A84B8265BF30100728328 /* ProductCellProvider.swift */,
@@ -708,6 +721,27 @@
 				F5E92F7D264C3C2E006F9FBD /* ActualPagerModel.swift */,
 			);
 			path = Pager;
+			sourceTree = "<group>";
+		};
+		F5FD4CCC265C08300049195D /* ProductNotification */ = {
+			isa = PBXGroup;
+			children = (
+				F5FD4CD9265C161F0049195D /* SizePickerView */,
+				F5FD4CCD265C09610049195D /* ProductNotificationViewController.swift */,
+				F5FD4CCE265C09610049195D /* ProductNotificationViewController.xib */,
+				F5FD4CD4265C09C70049195D /* ProductNotificationSizeView.swift */,
+			);
+			path = ProductNotification;
+			sourceTree = "<group>";
+		};
+		F5FD4CD9265C161F0049195D /* SizePickerView */ = {
+			isa = PBXGroup;
+			children = (
+				F5FD4CDA265C165D0049195D /* SizePickerView.swift */,
+				F5FD4CE2265C166A0049195D /* SizePickerView.xib */,
+				F53CC426265D17700074F2EB /* BottomPickerViewController.swift */,
+			);
+			path = SizePickerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -827,8 +861,10 @@
 				F55A84B1265BED1500728328 /* ExpandableDescriptionCell.xib in Resources */,
 				F55A8483265BE7AA00728328 /* ProductCompositionCell.xib in Resources */,
 				F55A848B265BE7BF00728328 /* ProductDescriptionCell.xib in Resources */,
+				F5FD4CD0265C09610049195D /* ProductNotificationViewController.xib in Resources */,
 				D12600DB26467AAC00ECD3B8 /* Assets.xcassets in Resources */,
 				F55A8477265BE71700728328 /* ContactsCell.xib in Resources */,
+				F5FD4CE3265C166A0049195D /* SizePickerView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1002,9 +1038,12 @@
 				F5E92F7E264C3C2E006F9FBD /* ActualPagerModel.swift in Sources */,
 				F5B7B8BE264BDD2100394F87 /* ButtonsFactory.swift in Sources */,
 				F55A8498265BE7D700728328 /* ProductSizeView.swift in Sources */,
+				F5FD4CD5265C09C70049195D /* ProductNotificationSizeView.swift in Sources */,
 				D126015F2646800D00ECD3B8 /* IGStoryPreviewView.swift in Sources */,
 				D103F59F264AEE43002FDF09 /* IGHomeViewModel.swift in Sources */,
 				D12600D226467AA900ECD3B8 /* AppDelegate.swift in Sources */,
+				F5FD4CCF265C09610049195D /* ProductNotificationViewController.swift in Sources */,
+				F53CC427265D17700074F2EB /* BottomPickerViewController.swift in Sources */,
 				F5B7B8AC264BD8C100394F87 /* SnapKit+UIView+Extension.swift in Sources */,
 				D12601552646800D00ECD3B8 /* IGRoundedView.swift in Sources */,
 				F5D264F6264C1132000D5EAA /* ProductOfferCell.swift in Sources */,
@@ -1022,6 +1061,7 @@
 				D126015B2646800D00ECD3B8 /* IGPlayerView.swift in Sources */,
 				D126015E2646800D00ECD3B8 /* IGRetryButton.swift in Sources */,
 				F55A8497265BE7D700728328 /* EdgeInsetLabel.swift in Sources */,
+				F5FD4CDB265C165D0049195D /* SizePickerView.swift in Sources */,
 				D12601642646800D00ECD3B8 /* UIView+Anchor.swift in Sources */,
 				D12601542646800D00ECD3B8 /* IGResult.swift in Sources */,
 				D126010C26467F9200ECD3B8 /* StoriesBannerView.swift in Sources */,
