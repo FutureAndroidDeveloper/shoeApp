@@ -2,17 +2,12 @@ import UIKit
 import CenteredCollectionView
 
 class ProductsOfferView: UIView {
-    let centeredCollectionViewFlowLayout = CenteredCollectionViewFlowLayout()
-    let collectionView: UICollectionView
-    
+    private let centeredCollectionViewFlowLayout = CenteredCollectionViewFlowLayout()
+    private let collectionView: UICollectionView
     private let titleLabel = UILabel()
     private let subtitleLabel = UILabel()
     private let shoppingButton = UIButton()
-    
-    // The width of each cell with respect to the screen.
-    // Can be a constant or a percentage.
-    let cellPercentWidth: CGFloat = 0.7
-    
+    private let cellPercentWidth: CGFloat = 0.7
     private let model: ProductsOffer
     
     var productSelected: (() -> Void)?
@@ -32,34 +27,14 @@ class ProductsOfferView: UIView {
     }
     
     override func layoutSubviews() {
-        print(bounds.width)
-//        centeredCollectionViewFlowLayout.itemSize = CGSize(
-//          width: bounds.width * cellPercentWidth,
-//            height: (bounds.width * cellPercentWidth) * 1.1
-//        )
-        
         centeredCollectionViewFlowLayout.itemSize = CGSize(
           width: bounds.width * cellPercentWidth,
             height: ProductOfferCellView.myHeight
         )
-        
-//        centeredCollectionViewFlowLayout.itemSize = CGSize(
-//          width: bounds.width * cellPercentWidth,
-//            height: bounds.height 
-//        )
-        
-//        centeredCollectionViewFlowLayout.itemSize = CGSize(width: 250, height: 250)
         centeredCollectionViewFlowLayout.minimumLineSpacing = centeredCollectionViewFlowLayout.itemSize.width / 10
     }
     
     private func build() {
-        let screenSize: CGRect = UIScreen.main.bounds
-        let cellWidth = screenSize.width * cellPercentWidth
-        
-        
-        collectionView.delegate = self
-        collectionView.dataSource = self
-        
         let titlesStackView = UIStackView(arrangedSubviews: [titleLabel, subtitleLabel])
         titlesStackView.axis = .vertical
         titlesStackView.spacing = 10
@@ -72,7 +47,6 @@ class ProductsOfferView: UIView {
         addView(collectionView) {
             $0.top.equalTo(titlesStackView.snp.bottom).offset(30)
             $0.leading.trailing.equalToSuperview()
-//            $0.edges.equalToSuperview()
             $0.height.equalTo(320)
         }
         
@@ -82,8 +56,6 @@ class ProductsOfferView: UIView {
         }
         
         let separatorView = UIView()
-        UIColor.black.withAlphaComponent(0.5)
-        
         separatorView.backgroundColor = UIColor.black.withAlphaComponent(0.1)
         separatorView.snp.makeConstraints {
             $0.height.equalTo(1)
@@ -94,14 +66,11 @@ class ProductsOfferView: UIView {
         }
         
         collectionView.register(ProductOfferCellView.self, forCellWithReuseIdentifier: ProductOfferCellView.reuseIdentifier)
-        
-        // Get rid of scrolling indicators
         collectionView.showsVerticalScrollIndicator = false
         collectionView.showsHorizontalScrollIndicator = false
-        
         collectionView.backgroundColor = .clear
-//        collectionView.backgroundColor = .green
-//        backgroundColor = .yellow
+        collectionView.delegate = self
+        collectionView.dataSource = self
     }
     
     private func bind() {

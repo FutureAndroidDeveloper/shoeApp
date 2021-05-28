@@ -19,7 +19,6 @@ class ProductNotificationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Сообщите, когда товар появится"
         bind()
     }
     

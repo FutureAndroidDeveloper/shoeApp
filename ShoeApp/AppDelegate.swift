@@ -16,15 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var orientationLock = UIInterfaceOrientationMask.all
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        
         window = UIWindow(frame: UIScreen.main.bounds)
         
         let vc = ViewController()
-        
         NavigationManager.shared.navigationController.viewControllers = [vc]
-        
-//        window?.rootViewController = UINavigationController(rootViewController: vc)
         window?.rootViewController = NavigationManager.shared.navigationController
         window?.makeKeyAndVisible()
         

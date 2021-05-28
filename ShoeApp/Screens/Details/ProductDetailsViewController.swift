@@ -56,42 +56,10 @@ class ProductDetailsViewController: UIViewController {
         tableView.register(UINib(nibName: "ContactsCell", bundle: nil), forCellReuseIdentifier: ContactsCell.ID)
         
         build()
+        setupHeaderObserver()
 
     }
-
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        token = tableView.parallaxHeader.observe(\.progress) { [weak self] object, change in
-            guard let self = self else {
-                return
-            }
-            
-            let navHeight = self.navigationController?.navigationBar.frame.height ?? 0
-            let percentage = navHeight / self.tableView.parallaxHeader.height
-            
-            
-            if (0...percentage).contains(object.progress) {
-                self.header.changeInfoAlpha(object.progress / percentage)
-                self.navigationItem.titleView = nil
-                let appearance = self.navigationController?.navigationBar.standardAppearance
-                appearance?.backgroundColor = .clear
-            }
-            
-            if (percentage...1).contains(object.progress) {
-                self.header.changeInfoAlpha(1)
-                self.navigationItem.titleView?.alpha = 0
-            }
-            
-            if object.progress.isZero {
-                self.navigationItem.setTitle("Santoni", subtitle: "$589")
-                let appearance = self.navigationController?.navigationBar.standardAppearance
-                appearance?.backgroundColor = .white
-            }
-        }
-        
-        tableView.open(at: .init(row: 0, section: 0))
-    }
+    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         self.pagerView.itemSize = CGSize(width: view.frame.width,
@@ -143,6 +111,38 @@ class ProductDetailsViewController: UIViewController {
         tableView.snp.makeConstraints {
             $0.edges.equalToSuperview()
         }
+    }
+    
+    private func setupHeaderObserver() {
+        token = tableView.parallaxHeader.observe(\.progress) { [weak self] object, change in
+            guard let self = self else {
+                return
+            }
+            
+            let navHeight = self.navigationController?.navigationBar.frame.height ?? 0
+            let percentage = navHeight / self.tableView.parallaxHeader.height
+            
+            
+            if (0...percentage).contains(object.progress) {
+                self.header.changeInfoAlpha(object.progress / percentage)
+                self.navigationItem.titleView = nil
+                let appearance = self.navigationController?.navigationBar.standardAppearance
+                appearance?.backgroundColor = .clear
+            }
+            
+            if (percentage...1).contains(object.progress) {
+                self.header.changeInfoAlpha(1)
+                self.navigationItem.titleView?.alpha = 0
+            }
+            
+            if object.progress.isZero {
+                self.navigationItem.setTitle("Santoni", subtitle: "$589")
+                let appearance = self.navigationController?.navigationBar.standardAppearance
+                appearance?.backgroundColor = .white
+            }
+        }
+        
+        tableView.open(at: .init(row: 0, section: 0))
     }
     
 }
