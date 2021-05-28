@@ -18,12 +18,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
         
-        let vc = ViewController()
-        NavigationManager.shared.navigationController.viewControllers = [vc]
-        window?.rootViewController = NavigationManager.shared.navigationController
+        
+        
+        
+        let tabBar = UITabBarController()
+        let searchVC = SearchViewController(nibName: "SearchViewController", bundle: nil)
+        searchVC.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 1)
+        let mainVC = ViewController()
+        mainVC.tabBarItem = UITabBarItem(tabBarSystemItem: .more, tag: 0)
+        tabBar.viewControllers = [myVC(mainVC), myVC(searchVC)]
+        
+//        NavigationManager.shared.navigationController.viewControllers = [vc]
+        window?.rootViewController = tabBar
         window?.makeKeyAndVisible()
         
         return true
+    }
+    
+    private func myVC(_ viewController: UIViewController) -> UINavigationController {
+        let navController = UINavigationController(rootViewController: viewController)
+        return navController
     }
 
 }

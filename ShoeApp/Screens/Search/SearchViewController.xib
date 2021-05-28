@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController" customModule="ShoeApp" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="8cV-Bu-YOo" id="5AY-Pf-rZs"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Boz-2Y-XHn">
+                    <rect key="frame" x="0.0" y="0.0" width="303" height="56"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="8cV-Bu-YOo">
+                    <rect key="frame" x="0.0" y="56" width="414" height="680"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZSx-ks-lmt">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="769-P9-9eJ">
+                    <rect key="frame" x="303" y="12" width="111" height="32"/>
+                    <color key="tintColor" systemColor="labelColor"/>
+                    <inset key="contentEdgeInsets" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="-8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="Фильтр" image="filter">
+                        <color key="titleColor" systemColor="labelColor"/>
+                    </state>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="769-P9-9eJ" firstAttribute="centerY" secondItem="Boz-2Y-XHn" secondAttribute="centerY" id="46k-8j-DFC"/>
+                <constraint firstItem="8cV-Bu-YOo" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="9A3-7a-ZLH"/>
+                <constraint firstItem="8cV-Bu-YOo" firstAttribute="top" secondItem="Boz-2Y-XHn" secondAttribute="bottom" id="G4T-5k-Dhh"/>
+                <constraint firstItem="Boz-2Y-XHn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="OeN-m5-RUg"/>
+                <constraint firstItem="8cV-Bu-YOo" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Qtd-pd-P1a"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="769-P9-9eJ" secondAttribute="trailing" id="UQR-4Y-f3k"/>
+                <constraint firstItem="Boz-2Y-XHn" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="pTn-Fk-a7V"/>
+                <constraint firstItem="769-P9-9eJ" firstAttribute="leading" secondItem="Boz-2Y-XHn" secondAttribute="trailing" id="t7b-7w-xKs"/>
+                <constraint firstItem="8cV-Bu-YOo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="yOL-oz-Y51"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="107.60869565217392"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="filter" width="32" height="32"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
